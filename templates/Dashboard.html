@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="../static/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../static/css/style.css" media="screen">
+
+</head>
+<body>
+        <h1>DASHBOARD SUPER ADMINISTRADOR</h1>
+
+        <div class="con">
+            <h1>Administradores</h1>
+            <div class="box">
+                <form name="ADMINISTRATIVO" action="" method="get" onsubmit="return validar_formulario();">
+                    <div>
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+    
+                    <div>
+                        <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password">
+                    <img src="img/view.png" alt="" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
+                    </div>
+                    
+                    <div>
+                        Sexo:
+                        <input type="radio" name="sexo" id="sexo" value="m">
+                        <label for="sexo">Masculino</label>
+                        <input type="radio" name="sexo" id="sexo" value="f">
+                        <label for="sexo">Femenino</label>
+                    </div>    
+            </div>
+            <div class="box">
+                <h1>imagen</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ad ab mollitia earum, temporibus impedit reiciendis animi cumque nemo expedita atque nihil, facilis reprehenderit quod sunt ducimus inventore quae numquam!</p>
+            </div>
+        </div>
+
+        
+        <div>
+            <a href="{{url_for('ir_a_principal')}}" class="u-active-none u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-btn-4">Salir</a>
+        </div>
+    
+</body>
+</html>

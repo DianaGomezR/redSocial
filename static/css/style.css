@@ -1,0 +1,59 @@
+*{
+    margin: 10;
+    padding: 0;
+    background-color: rgb(235, 102, 14);
+}
+
+.contenido {
+    margin: 3px;
+}
+
+.caja {
+    display: table-cell;
+    padding: 20px;   
+    text-align: left; 
+      margin: 20px;   
+}
+
+.caja:nth-child(1) h1{
+    background-color: black;
+    color: white;
+    
+}
+
+.caja:nth-child(2) h1{
+    background-color: black;
+    color: white;
+    
+}
+
+.caja:nth-child(1) form{
+    background-color: rgb(235, 102, 14);
+    color: white;
+    margin: 10px;
+          
+}
+
+.caja:nth-child(2) img{
+    height: 200px;
+}
+
+h1 {
+    font-family: serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    vertical-align: -webkit-baseline-middle;
+    
+}
+
+input {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.boton {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Page</title>
+
+<link rel="stylesheet" href="../static/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/css/style.css" media="screen">
+
+
+</head>
+<body>
+
+        <h1>PAGINA PRINCIPAL</h1>
+        <img src="images/Cervus_canadensis.PNG">
+
+
+        <div class="contenido">
+            <div class="caja"> 
+                
+        <h1>Perfil Usuario</h1>
+        <!-- <img src="image/usuario.png" alt="" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">-->
+        <a href="{{url_for('ir_a_perfil')}}" class="u-active-palette-2-light-2 u-border-1 u-border-active-palette-2-light-2 u-border-hover-palette-2-light-2 u-border-palette-2-light-1 u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-palette-2-light-2 u-btn-1">Perfil Usuario</a>
+
+            </div>
+            <div class="caja">
+                <h1>Publicacion1</h1>
+                <img src="image/Publicacion1.png" alt="" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
+                
+                <div>
+                    <input type="radio" name="Publicacion1" id="Eliminar" value="Eliminar">
+                    <label for="Eliminar">Eliminar</label> 
+                    <input type="radio" name="Publicacion1" id="Editar" value="Editar">
+                    <label for="Editar">Editar</label> 
+                </div>
+                <br>
+                <div>
+                    <output type="list" name="usuario_name" id="usuario_name">
+                    <label for="usuario_name">Nombre del usuario</label>
+                </div>
+                <div>
+                    <output type="email" name="usuario_email" id="usuario_email">
+                    <label for="usuario_email">Email</label>
+                </div>
+                <div>
+                    <output type="phone" name="usuario_phone" id="usuario_phone">
+                    <label for="usuario_phone">Número de Teléfono</label>
+                </div>
+                <div>
+                <br>
+                </div>
+                <div>                    
+                    <output type="caja" name="comentario" id="comentario">
+                    <label for="comentario">Comentario:</label>
+                </div>
+               
+                <div>
+                    <div>
+                        <output type="text" name="comentario" id="comentario">
+                        <label for="comentario">Comentario 1 pertenece a publicación 1.</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <input type="radio" name="comentario" id="Eliminar" value="Eliminar">
+                    <label for="Eliminar">Eliminar</label> 
+                    <input type="radio" name="comentario" id="Editar" value="Editar">
+                    <label for="Editar">Editar</label> 
+                </div>
+            
+        </div>
+
+        
+        
+    
+</body>
+</html>
